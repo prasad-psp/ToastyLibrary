@@ -16,10 +16,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnShortToast = findViewById(R.id.btnShortToast);
+        Button btnLongToast = findViewById(R.id.btnLongToast);
 
 
         btnShortToast.setOnClickListener(v -> {
             SimpleToast.makeShortToast(this,"Short toast");
+        });
+
+        btnLongToast.setOnClickListener(v -> {
+            SimpleToast.makeLongToast(this,"Long toast");
         });
     }
 }
